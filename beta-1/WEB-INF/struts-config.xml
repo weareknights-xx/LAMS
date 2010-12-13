@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.0//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_0.dtd">
+
+<!--
+     This is the Struts configuration file for the sta application,
+     using the proposed new syntax.
+
+     NOTE:  You would only flesh out the details in the "form-bean"
+     declarations if you had a generator tool that used them to create
+     the corresponding Java classes for you.  Otherwise, you would
+     need only the "form-bean" element itself, with the corresponding
+     "name" and "type" attributes.
+-->
+
+
+<struts-config>
+
+<!--
+ <data-sources>
+    <data-source
+       autoCommit="false"
+       description="Sta Data Source Configuration"
+       driverClass="oracle.jdbc.driver.OracleDriver"
+       maxCount="50"
+       minCount="2"
+       password="bpr"
+       url="jdbc:oracle:thin:@webserver:1521:orcl"
+       user="bpr"
+    />
+ </data-sources>
+
+ <data-sources>
+          <data-source>
+             <set-property property="key" value="StaDS"/>
+             <set-property property="autoCommit" value="false"/>
+             <set-property property="description" value="STA Data Source Configuration"/>
+             <set-property property="driverClass" value="oracle.jdbc.driver.OracleDriver"/>
+             <set-property property="maxCount"   value="10"/>
+             <set-property property="minCount"   value="2"/>
+             <set-property property="password"   value="janslee"/>
+             <set-property property="user"       value="mario"/>
+             <set-property property="url"        value="jdbc:oracle:thin:@lijc:1521:oracle"/>    
+          </data-source>
+  </data-sources>
+
+-->
+ <form-beans> 
+ </form-beans>
+
+
+<global-forwards>
+
+<!-- Leon Chen 2003.06.18 -->
+
+<forward        name="Tree Control Test"
+                    path="/deptwork/tree-control-test.jsp"
+                redirect="false"/>               
+   
+
+</global-forwards>
+
+<action-mappings>
+
+<action    path="/setUpTree"
+               type="org.apache.webapp.admin.SetUpTreeAction">
+      <forward        name="SetUpTree"
+                      path="/deptwork/tree-control-test.jsp"
+                  redirect="true"/>
+</action>
+
+<action    path="/functionTree"
+               type="org.apache.webapp.admin.FunctionTreeAction">
+      <forward        name="success"
+                      path="/deptwork/tree-control-test.jsp"
+                  redirect="true"/>
+</action>
+
+<action    path="/treeControlTest"
+               type="org.apache.webapp.admin.TreeControlTestAction"/>
+<action    path="/deptwork/treeControlTest"
+               type="org.apache.webapp.admin.TreeControlTestAction"/>
+
+</action-mappings>
+
+
+
+</struts-config>

@@ -1,0 +1,32 @@
+BODY {
+				font-size: 9pt; 
+				color: #000000; 
+				font-family: "宋体";
+ 				background-color: #FFFFFF;
+}
+
+TD {
+				font-size: 9pt; 
+				font-family: "宋体";
+				white-space: nowrap;
+}
+
+A {
+				font-size: 9pt; 
+				color: #000000; 
+				font-family: "宋体"; 
+				text-decoration: none
+}
+
+A:hover {
+				font-size: 9pt; 
+				color: #0000CC; 
+				font-family: "宋体"; 
+				text-decoration: none
+}
+
+A:active { 
+				font-size: 9pt; 
+				text-decoration: none; 
+				color: #000000;
+} 

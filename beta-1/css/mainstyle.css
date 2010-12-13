@@ -1,0 +1,62 @@
+BODY {
+				font-size: 9pt; 
+				color: #000000; 
+				font-family: "宋体";
+}
+
+TD {
+				font-size: 9pt; 
+				font-family: "宋体";
+				white-space : nowrap;
+}
+
+A {
+				font-size: 9pt; 
+				color: #313A80; 
+				font-family: "宋体"; 
+				text-decoration: none
+}
+
+A:hover {
+				font-size: 9pt; 
+				color: #313A80; 
+				font-family: "宋体"; 
+				text-decoration: none
+}
+
+A:active { 
+				font-size: 9pt; 
+				text-decoration: none; 
+				color: #4B0097
+} 
+
+
+.MenuLayer {
+				background-color: #EBEFFA;
+				border: 1px solid #7F7F7F;
+				line-height: 20px;
+				color: #A64200;
+				padding-left: 5px;
+}
+
+.itemBorder { 
+				border: 0; 
+}
+
+.itemText { 
+				text-decoration: none; 
+				color: #000000; 
+				font: 9pt 宋体 
+}
+
+.crazyBorder { 
+				border: 0 
+}
+
+.crazyText { 
+				text-decoration: none; 
+				color: #000000; 
+				font: 9pt 宋体 
+}
+
+

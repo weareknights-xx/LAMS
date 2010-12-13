@@ -1,0 +1,38 @@
+BODY {
+				scrollbar-highlight-color: #FFFFFF; 
+				scrollbar-shadow-color: #BFBFBF; 
+				scrollbar-arrow-color: #0060BF; 
+				scrollbar-face-color: #FFFFFF; 
+				scrollbar-track-color: #FFFFFF; 
+				scrollbar-3dlight-color: #BFBFBF; 
+				scrollbar-darkshadow-color: #FFFFFF;
+				font-size: 9pt; 
+				color: #000000; 
+				font-family: "宋体";
+}
+
+TD {
+				font-size: 9pt; 
+				font-family: "宋体";
+				white-space: nowrap;
+}
+
+A {
+				font-size: 9pt; 
+				color: #000000; 
+				font-family: "宋体"; 
+				text-decoration: none
+}
+
+A:hover {
+				font-size: 9pt; 
+				color: #F97C00; 
+				font-family: "宋体"; 
+				text-decoration: none
+}
+
+A:active { 
+				font-size: 9pt; 
+				text-decoration: none; 
+				color: #000000;
+} 

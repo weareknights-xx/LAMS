@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+
+
+
+<taglib>
+
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>1.2</jsp-version>
+  <short-name>controls</short-name>
+    <uri>/controls</uri>
+    <display-name>controls</display-name>
+    <small-icon></small-icon>
+    <large-icon></large-icon>
+  <description>
+    JSP tag library containing custom GUI controls used in the
+    Tomcat Administrative Application.
+  </description>
+
+  <!-- ========== Instant Table Tag ===================================== -->
+
+  <tag>
+
+    <name>table</name>
+    <tag-class>org.apache.webapp.admin.TableTag</tag-class>
+    <body-content>JSP</body-content>
+    <description>
+      Render a "table" object, which is rendered as an HTML
+      "table" element. 
+      
+      NOTE:  The only valid nested content for this tag is
+      "row" tags from this library.  Anything else will cause
+      the rendered HTML to be invalid.
+
+      NOTE:  To be usable, this tag must be nested inside an
+      HTML &lt;form> element.
+    </description>
+        <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+        <tldx>
+            <packagename>org.apache.webapp.admin</packagename>
+            <extendsSupportClass>TRUE</extendsSupportClass>
+            <supportClass>BodyTagSupport</supportClass>
+            <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
+            <findparent>FALSE</findparent>
+        </tldx>
+        -->
+
+    <attribute>
+      <name>columns</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>tableStyle</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+ 
+    <attribute>
+      <name>lineStyle</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+  </tag>
+
+    <tag>
+
+    <name>row</name>
+    <tag-class>org.apache.webapp.admin.RowTag</tag-class>
+    <body-content>JSP</body-content>
+    <description>
+      Define a single "instant table row" option for the surrounding "table"
+      tag.  It is not valid to use this tag *except* when nested inside an
+      "table" tag.
+
+      NOTE: This tag can nest only "label" and "data" tags.
+    </description>
+        <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+        <tldx>
+            <packagename>org.apache.webapp.admin</packagename>
+            <extendsSupportClass>TRUE</extendsSupportClass>
+            <supportClass>BodyTagSupport</supportClass>
+            <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
+            <findparent>FALSE</findparent>
+        </tldx>
+        -->
+
+    <attribute>
+      <name>header</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+    
+     <attribute>
+      <name>labelStyle</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+    
+     <attribute>
+      <name>dataStyle</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>    
+    
+     <attribute>
+      <name>styleId</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+        
+  </tag>
+
+ <tag>
+
+    <name>label</name>
+    <tag-class>org.apache.webapp.admin.LabelTag</tag-class>
+    <body-content>JSP</body-content>
+    <description>
+      Render a "label" object, which is rendered as a label in the row of
+      an HTML "table" element. 
+
+      NOTE:  To be usable, this tag must be nested inside a "row" tag.
+    </description>
+        <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+        <tldx>
+            <packagename>org.apache.webapp.admin</packagename>
+            <extendsSupportClass>TRUE</extendsSupportClass>
+            <supportClass>BodyTagSupport</supportClass>
+            <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
+            <findparent>FALSE</findparent>
+        </tldx>
+        -->
+  </tag>
+
+ <tag>
+
+    <name>data</name>
+    <tag-class>org.apache.webapp.admin.DataTag</tag-class>
+    <body-content>JSP</body-content>
+    <description>
+      Render a "data" object, which is rendered as a label in the row of
+      an HTML "table" element. 
+
+      NOTE:  To be usable, this tag must be nested inside a "row" tag.
+    </description>
+        <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+        <tldx>
+            <packagename>org.apache.webapp.admin</packagename>
+            <extendsSupportClass>TRUE</extendsSupportClass>
+            <supportClass>BodyTagSupport</supportClass>
+            <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
+            <findparent>FALSE</findparent>
+        </tldx>
+        -->
+  </tag>
+
+  <!-- ========== Instant Actions Tag ===================================== -->
+
+   <tag>
+
+    <name>actions</name>
+    <tag-class>org.apache.webapp.admin.ActionsTag</tag-class>
+    <body-content>JSP</body-content>
+    <description>
+      Render an "instant actions" object, which is rendered as an HTML
+      "select" element, where the selection of a particular element from
+      the list immediately causes a JavaScript function to be executed
+      (with the available elements specified by "action" tag instances
+      nested within the body of the "actions" tag).
+
+      NOTE:  The only valid nested content for this tag is
+      "action" tags from this library.  Anything else will cause
+      the rendered HTML to be invalid.
+
+      NOTE:  To be usable, this tag must be nested inside an
+      HTML &lt;form> element.
+    </description>
+        <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+        <tldx>
+            <packagename>org.apache.webapp.admin</packagename>
+            <extendsSupportClass>TRUE</extendsSupportClass>
+            <supportClass>BodyTagSupport</supportClass>
+            <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
+            <findparent>FALSE</findparent>
+        </tldx>
+        -->
+
+    <attribute>
+      <name>size</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>style</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>label</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+    
+  </tag>
+
+  <tag>
+
+    <name>action</name>
+    <tag-class>org.apache.webapp.admin.ActionTag</tag-class>
+    <body-content>JSP</body-content>
+    <description>
+      Define a single "instant action" option for the surrounding "actions"
+      tag.  It is not valid to use this tag *except* when nested inside an
+      "actions" tag.
+
+      NOTE:  The body content of this tag (which should be suitably
+      localized, if required by your application) is used as the
+      user-visible label for this action.
+    </description>
+        <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+        <tldx>
+            <packagename>org.apache.webapp.admin</packagename>
+            <extendsSupportClass>TRUE</extendsSupportClass>
+            <supportClass>BodyTagSupport</supportClass>
+            <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
+            <findparent>FALSE</findparent>
+        </tldx>
+        -->
+
+    <attribute>
+      <name>selected</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>disabled</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>url</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+  </tag>
+
+
+  <!-- ========== Tree Control Tag ======================================== -->
+
+  <tag>
+
+    <name>tree</name>
+    <tag-class>org.apache.webapp.admin.TreeControlTag</tag-class>
+    <body-content>empty</body-content>
+    <description>
+      Render a "tree" control, based on the current state of a data object
+      of type org.apache.webapp.admin.TreeControl, which is identified
+      by the name specified in the "tree" attribute, in the JSP scope
+      specified by the "scope" attribute.
+    </description>
+        <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+        <tldx>
+            <packagename>org.apache.webapp.admin</packagename>
+            <extendsSupportClass>TRUE</extendsSupportClass>
+            <supportClass>TagSupport</supportClass>
+            <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
+            <findparent>FALSE</findparent>
+        </tldx>
+        -->
+
+    <attribute>
+      <name>action</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>images</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>scope</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>style</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>styleSelected</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>styleUnselected</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>tree</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+  </tag>
+
+  <!-- ========== JMX Attribute Display Tag =============================== -->
+
+  <tag>
+
+    <name>attribute</name>
+    <tag-class>org.apache.webapp.admin.AttributeTag</tag-class>
+    <body-content>empty</body-content>
+    <description>
+      Look up an attribute on a JMX MBean, specified by an object name
+      specified by the "name" (and optional "property" and "scope")
+      attributes, and render it to the current JSP writer.  The object name
+      identified by these attributes can be either a java.lang.String version
+      of the name, or a javax.management.ObjectName instance.
+    </description>
+        <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+        <tldx>
+            <packagename>org.apache.webapp.admin</packagename>
+            <extendsSupportClass>TRUE</extendsSupportClass>
+            <supportClass>TagSupport</supportClass>
+            <implementsTryCatchFinally>FALSE</implementsTryCatchFinally>
+            <findparent>FALSE</findparent>
+        </tldx>
+        -->
+
+    <attribute>
+      <name>attribute</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>name</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>property</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+    <attribute>
+      <name>scope</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+            <!-- Forte4J_TLDX:  This comment contains code generation information. Do not delete.
+            <tldx>
+                <IsReferenceID>FALSE</IsReferenceID>
+                <ReferencesTag>FALSE</ReferencesTag>
+                <ReferenceScope>Session</ReferenceScope>
+                <ReferencesTagReferentFirst>TRUE</ReferencesTagReferentFirst>
+            </tldx>
+            -->
+    </attribute>
+
+  </tag>
+
+</taglib>

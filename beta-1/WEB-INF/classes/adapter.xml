@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Sam (Devotecom) -->
+<!-- Created by Administrator on 2003??5??1??, ????12:19 -->
+<adapter>
+	<!--连接池开关，使用连接池则connectionType项为Pool,否则可以为其他任意值-->
+	<connectionType>user</connectionType>
+	<!--单独连接的驱动选择，当connectionType不是Pool时，driverAdapter在哪个driversName前面，则使用该driver。-->
+	<driverAdapter>Oracle</driverAdapter>
+	<driversName id="MYSQL">
+		<userName>mysql</userName>
+		<passWord>usemysql</passWord>
+		<url>jdbc:mysql://171.71.10.2:3307/USER</url>
+		<driver>org.gjt.mm.mysql.Driver</driver>
+		<adapterName>MysqlDbAdapter</adapterName>
+	</driversName>
+	<driversName id="Oracle">
+		<userName>eoa</userName>
+		<passWord>eoa</passWord>
+		<url>jdbc:oracle:thin:@localhost:1521:orcl</url>
+		<driver>oracle.jdbc.driver.OracleDriver</driver>
+		<adapterName>OracleDbAdapter</adapterName>
+	</driversName>
+	<driversName id="ODBC">
+		<userName>eoa</userName>
+		<passWord>eoa</passWord>
+		<url>jdbc:oracle:thin:@dell-2500:1521:ORCL</url>
+		<driver>sun.jdbc.odbc.JdbcODBCDriver</driver>
+		<adapterName>OdbcDbAdapter</adapterName>
+	</driversName>
+	<!--连接池驱动选择，当connectionType为Pool时，poolAdapter在哪个driversName前面就使用该driver。(需要在tomcat中已经配置好连接池)-->
+	<poolAdapter>EoaPool</poolAdapter>
+	<driversName id="MYSQLPOOL">
+		<userName>mysql</userName>
+		<passWord>usemysql</passWord>
+		<url>jdbc:mysql://171.71.10.2:3307/USER</url>
+		<driver>org.gjt.mm.mysql.Driver</driver>
+		<adapterName>java:comp/env/mysqldb</adapterName>
+	</driversName>
+</adapter>

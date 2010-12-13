@@ -1,0 +1,139 @@
+BODY {
+				scrollbar-highlight-color: #FFFFFF;
+				scrollbar-shadow-color: #BFBFBF;
+				scrollbar-arrow-color: #0060BF;
+				scrollbar-face-color: #FFFFFF;
+				scrollbar-track-color: #FFFFFF;
+				scrollbar-3dlight-color: #BFBFBF;
+				scrollbar-darkshadow-color: #FFFFFF;
+				font-size: 9pt;
+				color: #000000;
+				font-family: "宋体";
+ 				background-image: url("../images/rightfrm_bg.jpg");
+				background-position: right;
+				background-attachment: fixed;
+				background-repeat: repeat-y;
+}
+
+TD {
+				font-size: 9pt; font-family: "宋体"; white-space : nowrap;
+}
+
+SELECT {
+				font-family: "宋体,Arial,Helvetica,sans-serif";
+				font-size: 9pt;
+				color: #000000;
+				background-color: #FFFFFF;
+				border-top: 1px solid #000000;
+				border-right: 1px solid #000000;
+				border-bottom: 1px solid #000000;
+				border-left: 1px solid #000000;
+}
+
+A {
+				font-size: 9pt; color: #0261CA; font-family: "宋体"; text-decoration: none
+}
+
+A:hover {
+				font-size: 9pt; color: #FF6600; font-family: "宋体"; text-decoration: none
+}
+
+A:active {
+				font-size: 9pt; text-decoration: none; color: #0261CA
+}
+
+
+/* -------------------------------------------------------------------------- */
+.title_table {
+				color: #014787;
+				font-weight: bold;
+}
+
+.content_table {
+				background-color: #B4B4B4;
+}
+
+
+.table_title {
+				background: url(../images/tr_title_bg.gif);
+				background-repeat: repeat-x;
+				color: #000000;
+				text-align: center;
+}
+
+
+/* -------------------------------------------------------------------------- */
+.input_data {
+				font-family: "宋体,Arial,Helvetica,sans-serif";
+				font-size: 9pt;
+				color: #014787;
+				background-color: #FFFFFF;
+				border: 1px solid #1991D6;
+}
+
+.input_modify {
+				font-family: "宋体,Arial,Helvetica,sans-serif";
+				font-size: 9pt;
+				color: #000000;
+				background-color: transparent;
+				border: 0;
+}
+
+.input_readonly {
+				font-family: "宋体,Arial,Helvetica,sans-serif";
+				font-size: 9pt;
+				color: #014787;
+				background-color: #FFFFFF;
+				border: 1px dotted #1991D6;
+}
+
+.input_button{
+				font-family: "宋体,Arial,Helvetica,sans-serif";
+				font-size: 9pt;
+				color: #000000;
+				background-color: #81D6FE;
+}
+
+.t1 {
+				background-color: #E8E8E8;
+				text-align: left;
+				padding-left: 10pt;
+				line-height: 20px;
+}
+
+.t2 {
+				background-color: #F9F9F9;
+				text-align: left;
+				padding-left: 10pt;
+				line-height: 20px;
+}
+
+.mydesk_table {
+				line-height: 20px;
+}
+
+.mydesk_table td {
+				border-bottom: 1px solid #E3E3E3;
+}
+
+/*-------------------------------------------add by wyq-----------------------------------------*/
+.input_print {
+				font-family: "宋体,Arial,Helvetica,sans-serif";
+				font-size: 9pt;
+				border: 0px solid #000000;
+}
+#title {color: #FF6600}
+#line_table { border-top: 1px solid #000000; border-right: 1px solid #000000}
+.right_frame table { background-color: #D3F4FE}
+.right_frame td {text-align: default; border-bottom: 1px solid #000000; border-left: 1px solid #000000}
+#right_frame_title {text-align: center; color: #21ACE8}
+
+#line_table_red { border-top: 1px solid #FF6600; border-right: 1px solid #FF6600}
+.right_frame_red table { background-color: #FED1C5}
+.right_frame_red td {text-align: center; border-bottom: 1px solid #FF6600; border-left: 1px solid #FF6600}
+.right_frame_red_title {text-align: center; background-color: #FEE7E0; color: #000000}
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+

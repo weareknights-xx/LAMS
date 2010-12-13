@@ -1,0 +1,281 @@
+BODY {
+				scrollbar-face-color: #FFFFFF; 
+				scrollbar-highlight-color: #000000; 
+				scrollbar-shadow-color: #000000; 
+				scrollbar-arrow-color: #000000; 
+				scrollbar-track-color: #FFFFFF; 
+				scrollbar-3dlight-color: #FFFFFF; 
+				scrollbar-darkshadow-color: #FFFFFF;
+				FONT-SIZE: 9pt; 
+				FONT-FAMILY: "宋体,Arial";
+}
+
+TR {
+				FONT-SIZE: 9pt; 
+				FONT-FAMILY: "宋体,Arial"; 
+}
+
+SELECT {
+				font-family: "宋体,Arial,Helvetica,sans-serif"; 
+				font-size: 9pt; 
+				color: #000000; 
+				background-color: #FFFFFF; 
+				border-top: 1px solid #0C2D5F; 
+				border-right: 1px solid #0C2D5F; 
+				border-bottom: 1px solid #0C2D5F; 
+				border-left: 1px solid #0C2D5F;
+}
+
+A {
+				FONT-SIZE: 9pt; 
+				COLOR: #000000; 
+				FONT-FAMILY: "宋体,Arial"; 
+				TEXT-DECORATION: none;
+}
+
+A:hover {
+				FONT-SIZE: 9pt; 
+				COLOR: #ff0000; 
+				FONT-FAMILY: "宋体,Arial"; 
+				TEXT-DECORATION: none
+}
+
+HR {
+
+				color: #0C2D5F;
+				border-style:dotted;
+}
+
+/* ---------- This is the style for pagepositon table. -----------  */
+.top_table {
+				color:#0C2D5F
+}        
+
+/* ---------- This is the style for titlefont. -----------  */
+.titlestyle {
+				color: #0000FF;
+}
+
+/* ---------- This is the style for search input textfield. ----------- */
+.search_input {
+				font-family: "宋体", "Arial", "Helvetica", "sans-serif"; 
+				font-size: 9pt; 
+				color: #0C2D5F; 
+				background-color: #FFFFFF; 
+				border-top: 1px solid #0C2D5F; 
+				border-right: 1px solid #0C2D5F; 
+				border-bottom: 1px solid #0C2D5F; 
+				border-left: 1px solid #0C2D5F;
+}        
+
+/* ----------- This is the style for datacontent table ------------ */
+.content_table {
+				background-color: #B4B4B4;
+} 
+
+/* ----------- These are the style for datainput table ------------- */ 
+.input_outer_table {
+				border-top: 1px solid #6B645E;
+				border-bottom: 1px solid #6B645E;
+				border-left: 1px solid #6B645E;
+				border-right: 1px solid #6B645E;
+}
+
+.input_outer_table_blue {
+				border-top: 1px solid #0470B7;
+				border-bottom: 1px solid #0470B7;
+				border-left: 1px solid #0470B7;
+				border-right: 1px solid #0470B7;
+}
+
+.input_inner_table {
+				background-color: #FFFFFF;
+}
+
+.input_inner_table TR{
+				height: 27px;
+}
+
+.must_input {
+				color: #FF0000;
+}	
+
+.input_data_input {
+				width: 80pt;
+				background-color: transparent;
+				border-top: 0;
+				border-bottom: 1px solid #000000;
+				border-left: 0;
+				border-right: 0; 
+}      				
+
+.input_data_input_long {
+				width: 280pt;
+				background-color: transparent;
+				border-top: 0;
+				border-bottom: 1px solid #000000;
+				border-left: 0;
+				border-right: 0; 
+}      				
+
+.show_data_input {
+				color: #A59D98;
+				width: 80pt;
+				background-color: transparent;
+				border-top: 0;
+				border-bottom: 1px dotted #A59D98;
+				border-left: 0;
+				border-right: 0; 
+}      				
+
+.show_data_input_long {
+				color: #A59D98;
+				width: 280pt;
+				background-color: transparent;
+				border-top: 0;
+				border-bottom: 1px dotted #A59D98;
+				border-left: 0;
+				border-right: 0; 
+}    
+
+
+/* ----------- These are the style for device_content table ------------- */ 
+.device_content_table {
+				background-color: #0470B7;
+} 
+
+
+.input_device_input {
+				width: 47pt;
+				color: #0383B4;
+				background-color: transparent;
+				border-top: 0;
+				border-bottom: 1px solid #000000;
+				border-left: 0;
+				border-right: 0; 
+}      			
+
+.show_device_input {
+				width: 47pt;
+				color: #0383B4;
+				background-color: transparent;
+				border-top: 0;
+				border-bottom: 1px dotted #0383B4;
+				border-left: 0;
+				border-right: 0; 
+}      			
+	
+/* ---------- These are the style for doublecolortr table ------------- */ 
+.t1 {
+				background-color: #F0F0F0; 
+				text-align: left; 
+				padding-left: 10pt;
+}
+
+.t2 {
+				background-color: #ffffff; 
+				text-align: left; 
+				padding-left: 10pt;
+}
+
+.t1_blue {
+				background-color: #EEF9FF; 
+				text-align: left; 
+				padding-left: 10pt;
+}
+
+.t2_blue {
+				background-color: #ffffff; 
+				text-align: left; 
+				padding-left: 10pt;
+} 
+
+.t1_purple {
+				background-color: #EEEEFF; 
+				text-align: left; 
+				padding-left: 10pt;
+}
+
+.t2_purple {
+				background-color: #ffffff; 
+				text-align: left; 
+				padding-left: 10pt;
+} 
+
+/* ------------ This is the style for the popupdescriptions. -------------- */
+#divTooltip {
+				position: absolute; 
+				top: 0px; 
+				width: 175px; 
+				visibility: hidden; 
+				z-index: 200; 
+				background-color: #FFFFDD; 
+				layer-background-color: #FFFFDD;
+}
+
+.normalStyle {
+				padding: 2px; 
+				text-align: center; 
+				font-weight: 500; 
+				width: 175px; 
+				color: #000000; 
+				top: 0px; 
+				font-family: verdana,arial,helvetica; 
+				font-size: 11px; 
+				background-color: #FFFFDD; 
+				layer-background-color: #FFFFDD; 
+				border-width: 1px; 
+				border-style: solid; 
+				border-color: #000000; 
+				cursor: default;
+}
+
+.netscape4Style {
+				padding: 0px; 
+				font-weight: 500; 
+				width: 175px; 
+				color: #000000; 
+				top: 0px; 
+				font-family: verdana,arial,helvetica; 
+				font-size: 11px; 
+				background-color: #FFFFDD; 
+				layer-background-color: #FFFFDD; 
+				border: 1px solid #000000;
+}   
+
+
+
+/* ------------ This is the style for the expandedsheet. -------------- */
+.expanded {
+
+}
+
+.collapsed {
+				DISPLAY: none
+}
+
+
+
+/* ---------- This is the style for popup window. -----------  */
+.clWin{position:absolute; z-index:2; visibility:hidden; overflow:hidden; 
+background-color:blue}
+
+.clWindow{position:absolute; background-color:blue; overflow:hidden; z-index:15; 
+width:200}
+
+.clWinHead{position:absolute; width:200; top:0; font-family:arial,arial,helvetica; 
+font-size:11px; font-weight:bold; color:white; background-color:transparent}
+
+.clText{position:absolute; z-index:50; font-family:arial,helvetica; font-size:11px; 
+background-color:transparent}
+
+.clWinResize{position:absolute; z-index:30; width:30; height:30; 
+clip:rect(0,30,30,0)}
+
+.clLogo{position:absolute}
+
+.clUp{position:absolute; width:12; height:12; z-index:60;}
+
+.clDown{position:absolute; width:12; height:12; z-index:60;}
+
+.clWinButtons{position:absolute; font-family:arial,helvetica; font-size:12px} 
