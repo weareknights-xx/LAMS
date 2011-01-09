@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckLogin</servlet-name>
+    <servlet-class>com.study.servlet.CheckLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>saveMember</servlet-name>
+    <servlet-class>com.study.servlet.saveMember</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>delMember</servlet-name>
+    <servlet-class>com.study.servlet.delMember</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>saveTopic</servlet-name>
+    <servlet-class>com.study.servlet.saveTopic</servlet-class>
+  </servlet>
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>CheckLogin</servlet-name>
+    <url-pattern>/servlet/CheckLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>saveMember</servlet-name>
+    <url-pattern>/servlet/saveMember</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delMember</servlet-name>
+    <url-pattern>/servlet/delMember</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>saveTopic</servlet-name>
+    <url-pattern>/servlet/saveTopic</url-pattern>
+  </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,108 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+body,td,th {
+	font-size: 12px;
+}
+a:link {
+	color: #1F5BA4;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #1F5BA4;
+}
+a:hover {
+	text-decoration: none;
+	color: #008B00;
+}
+a:active {
+	text-decoration: none;
+}
+
+a.a_red:link {
+	color: #FF0000;
+	text-decoration: none;
+}
+a.a_red:visited {
+	text-decoration: none;
+	color: #FF0000;
+}
+a.a_red:hover {
+	text-decoration: none;
+	color: #008B00;
+}
+a.a_red:active {
+	text-decoration: none;
+}
+
+a.a_black:link {
+	color: #000000;
+	text-decoration: none;
+}
+a.a_black:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a.a_black:hover {
+	text-decoration: none;
+	color: #008B00;
+}
+a.a_black:active {
+	text-decoration: none;
+}
+
+.bg1 {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #666666;
+	border-right-color: #666666;
+	border-left-color: #666666;
+}
+.bg2 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666666;
+}
+
+.px12_blue {
+	font-size: 12px;
+	color: #1F5BA4;
+}
+.px12B_blue {
+	font-size: 12px;
+	font-weight: bold;
+	color: #1F5BA4;
+}
+.px12_gray {color: #3A3A3A}
+.px13B_gray {
+	color: #3A3A3A;
+	font-size: 13px;
+	font-weight: bold;
+}
+.px12_green {
+	color: #008B00;
+}
+.px12B_green {
+	color: #008B00;
+	font-weight: bold;
+}
+.px13B_green {
+	color: #008B00;
+	font-weight: bold;
+	font-size: 13px;
+}
+.px12B_orange {
+	color: #F74D04;
+	font-weight: bold;
+}
+.px12_red {
+	color: #FF0000;
+}
